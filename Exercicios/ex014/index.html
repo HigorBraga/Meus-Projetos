@@ -15,5 +15,18 @@
         <source media="(max-width: 1050px)" srcset="imagens/foto-media.png" type="image/png">
         <img src="imagens/foto-grande.png" alt="Imagem grande">
     </picture>
+
+    <hr>
+    <h1>Reproduzindo Áudios</h1>
+    <p>vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midias/Before I Go - RKVC.mp3" controls autoplay></audio>
+    <!--Formatos compatíves como navegadores: MP3 WAV OGG-->
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midias/Before I Go - RKVC.mp3" type="audio/mpeg">
+        <source src="midias/Before I Go - RKVC.ogg" type="audio/ogg">
+        <source src="midias/Before I Go - RKVC.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudios. <a href="midias/Before I Go - RKVC.mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio>
 </body>
 </html>
