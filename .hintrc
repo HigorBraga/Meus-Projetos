@@ -9,6 +9,14 @@
         "dlitem": "off"
       }
     ],
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "iframe[allow]"
+        ]
+      }
+    ]
   }
 }
