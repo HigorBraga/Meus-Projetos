@@ -14,12 +14,15 @@
     font-style: normal;
 }
 
+/* Configuração do corpo */
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #7EC2F2;
     margin: 0px;
 }
+/* Configuração do corpo */
 
+/* Configuração do cabeçario */
 header{
     background-image: linear-gradient(to bottom, #34A2F0, #113650);
     color: white;
@@ -56,7 +59,9 @@ nav > a{
 nav > a:hover{
     background-color: #2A7FBD;
 }
+/* Configuração do cabeçario */
 
+/* Configuração  do conteúdo */
 main{
     background-color: white;
     margin:  0px 110px 30px 110px;
@@ -67,7 +72,7 @@ main{
     line-height: 40px;
 }
 
-section > h1, h2 {
+article#informacaoprincipal > h1, h2 {
     margin: 20px
 }
 
@@ -75,39 +80,38 @@ strong{
     color: #194C70;
 }
 
-section > h1{
+article#informacaoprincipal > h1{
     font-family: 'android', 'Times', 'serif';
     font-size: 2em;
     font-weight: normal;
     color: #194C70;
 }
 
-section > h2{
+article#informacaoprincipal > h2{
     font-family: 'android', 'Times','serif';
     font-weight: normal;
     color: #194C70;
     background-image: linear-gradient(to right, #34a2f0a1, white);
 }
 
-p > a {
+article#informacaoprincipal > p > a {
     text-decoration: none;
     background-color: #34a2f09f;
     color: #194C70;
     font-weight: bold;
 }
 
-p > a:hover {
+article#informacaoprincipal > p > a:hover {
     text-decoration: underline;
 }
 
-section > p{
+article#informacaoprincipal > p{
     text-align: justify;
     text-indent: 30px;
     padding: 20px
 }
 
-
-article{
+article#maisinformacao{
     background-color: #7EC2F2;
     margin: 20px;
     border-radius: 10px;
@@ -115,7 +119,7 @@ article{
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.432);
 }
 
-article > h2{
+article#maisinformacao > h2{
     background-color: #2A7FBD;
     margin: 0px;
     padding-left: 10px;
@@ -123,16 +127,23 @@ article > h2{
     border-top-right-radius: 10px;
 }
 
-article > p{
+article#maisinformacao > p{
     text-align: justify;
     text-indent: 30px;
     padding: 10px;
 }
 
+article#maisinformacao > p > a{
+    text-decoration: none;
+    color: #113650;
+    font-weight: bold;
+}
+
 img{
     display: block;
-    margin: 0px auto;
     width: 100%;
+    height: auto;
+    margin: 0px auto;
 }
 
 div#bugdroid{
@@ -142,7 +153,6 @@ div#bugdroid{
 }
 
 div#video{
-    text-align: center;
     background: #113650;
     padding: 22px 40px 8px 40px;
 }
@@ -152,11 +162,26 @@ div#video{
     line-height: normal;
 }
 
-div#listadireita{
+.lista > ul{
+    list-style-type: "\2714";
+}
+
+.lista > ul > li > a{
+    color: black;
+}
+
+ul#listadireita{
     margin: auto;
     display: inline-block;
 }
 
+section > p {
+    text-align: justify;
+    text-indent: 30px;
+}
+/* Configuração  do conteúdo */
+
+/* Configuração do rodapé */
 footer{
     background-color: #3A5A70;
     color: white;
@@ -172,3 +197,4 @@ footer > p{
 footer > p > strong{
     color: white;
 }
+/* Configuração do rodapé */
