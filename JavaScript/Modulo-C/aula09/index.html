@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+    <style>
+         body {
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+         }
+
+         button {
+            background-color: lightslategray;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            padding: 0.625rem;
+         }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong><abbr title="Document Object Model">DOM</abbr></strong> em JavaScript</p>
+    <button type="button">Clique em Mim!</button><br>
+
+
+
+    <script>
+        window.document.write("Olá, Mundo! <br>");
+        window.document.write(document.characterSet, "<br>");
+        window.document.write(window.navigator.appName, "<br>");
+        window.document.write(window.document.URL)
+    </script>
+</body>
+</html>

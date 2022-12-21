@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+<body>
+    <script>
+        let nome = window.prompt("Qual é seu nome? ");
+        let valor = 1945.75;
+        let valor1 = 1875.75;
+        let valor2 = 1265.75;
+        let real = valor.toLocaleString("pt-br", {style: "currency", currency: "BRL"});
+        let dolar = valor1.toLocaleString("en-us", {style: "currency", currency: "USD"});
+        let euro = valor2.toLocaleString("de-DE", {style: "currency", currency: "EUR"});
+        window.document.write(`Ola <strong>${nome}</strong>! Seu nome tem ${nome.length} letras. </br>`);
+        window.document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()}. </br>`);
+        window.document.write(`Seu nome em minúsculo é ${nome.toLowerCase()}.</br>`);
+        window.document.write(`O valor ${valor} convertido para real é ${real} </br>`);
+        window.document.write(`O valor ${valor1} convertido para dolar é ${dolar} </br>`);
+        window.document.write(`O valor ${valor2} convertido para euro é ${euro}`);
+
+
+        /*
+            Para fazer a conversão de um valor usando (.) por (,), usando a seguinte forma:
+
+            valor.toFixed(945.75).replace(".", ",");
+        
+        */
+
+
+        /*
+            Para mostrar um valor em real usando os seguintes comandos:
+
+        let real = valor.toLocaleString("pt-br", {style: "currency", currency: "BRL"});
+        let dolar = valor.toLocaleString("en-us", {style: "currency", currency: "USD"});
+        let euro = valor.toLocaleString("de-DE", {style: "currency", currency: "EUR"});
+        
+        */
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06</title>
+</head>
+<body>
+    <h1>Usando o comando PROMPT</h1>
+
+
+    <script>
+        let valor1  = window.prompt("Digite um número");
+        let valor2 = window.prompt("Digite outro número");
+        let soma = Number(valor1) + Number(valor2); // Fazendo a conversão dos valores para inteiro.
+        window.alert(`A soma entre ${valor1} e ${valor2} é igual a ${soma}`);
+
+
+        /*
+        let valor1  = Number.parseInt(window.prompt("Digite um número")); // Fazendo a conversão do valore para inteiro antes de atribuir o valor a variavel.
+
+        let valor2 = Number.parseInt(window.prompt("Digite outro número")); // Fazendo a conversão do valore para inteiro antes de atribuir o valor a variavel.
+
+        let soma = valor1 + valor2;
+
+        */
+
+
+
+        /*
+        Usando somente o Number e deixando que o proprio JavaScript descubra se o valor é float ou int.
+
+
+        let valor1  = Number(window.prompt("Digite um número")); // Fazendo a conversão do valore para inteiro antes de atribuir o valor a variavel.
+
+        let valor2 = Number(window.prompt("Digite outro número")); // Fazendo a conversão do valore para inteiro antes de atribuir o valor a variavel.
+        
+        let soma = valor1 + valor2;
+
+        */
+    </script>
+</body>
+</html>

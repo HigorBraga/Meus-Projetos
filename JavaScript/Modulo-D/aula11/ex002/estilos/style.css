@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url("../imagens/mundo.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container {
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+
+input {
+    margin-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    height: 2rem;
+}
+
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s ease-in-out;
+    background-color: #7c7c7c;
+    color: #fff;
+}
+
+
+button:hover {
+    background-color: #fff;
+    color: #7c7c7c;
+}
+
+
+#resposta {
+    color: #6fb0db;
+}

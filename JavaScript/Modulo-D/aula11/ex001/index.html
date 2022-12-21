@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            background-color: #fff;
+        }
+
+
+        .container {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem;
+            margin-top: 4rem;
+        }
+
+
+        input {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem;
+            width: 5rem;
+            height: 3rem;
+        }
+
+
+        button {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem;
+            width: 10rem;
+            height: 5rem;
+            cursor: pointer;
+            transition: 0.4s ease-in-out;
+            border: none;
+            background-color: blueviolet;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+
+        button:hover {
+            background-color: #dd4c4c;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1>Sistemas de Multas</h1>
+        <label for="txtvel">Velocidade do carro:</label>
+        <input type="number" name="txtvel" id="txtvel"> km/h
+        <button type="button" onclick="calcular()">Verificar</button>
+        <p id="resposta"></p>
+    </main>
+
+
+    <script>
+        function calcular() {
+            let velocidade = window.document.getElementById('txtvel');
+            let resposta = window.document.getElementById('resposta');
+            let vel = Number(velocidade.value);
+            resposta.innerHTML = `Sua velocidade atul é de <strong>${vel}km/h</strong><br>`;
+            if (vel > 60) {
+                resposta.innerHTML += `Você está <strong>MULTADO</strong> por excesso de velocidade`;
+            }
+            resposta.innerHTML += "<p>Dirija sempre com sinto de segurança</p>";
+        }
+    </script>
+</body>
+</html>
