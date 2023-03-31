@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Mostrando a Tabuada</h1>
+    </header>
+
+
+    <main>
+        <section id="container">
+            <div id="grupo-cima">
+                <form action="#">
+                    <label for="valtabuada">Qual tabuada você quer ver?</label>
+                    <input type="number" id="valtabuada" name="valtabuada">
+                </form>
+                <button type="button" onclick="tabuada()">Gerar Tabuada</button>
+            </div>
+
+
+            <div>
+                <select name="tabuada" id="seltab" size="11">
+                    <option value="#">Digite um número acima</option>
+                </select>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <i>&copy;Hbraga</i>
+    </footer>
+
+
+    <script src="/assets/scripts/script.js"></script>
+</body>
+</html>
