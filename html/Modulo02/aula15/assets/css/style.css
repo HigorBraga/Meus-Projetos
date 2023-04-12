@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family: 'Krinkes-decor';
+    src: url(/assets/fontes/fonte-dafont/KrinkesDecorPERSONAL.ttf) format(trueType);
+}
+
+
+@font-face {
+    font-family: 'Krinkes-regular';
+    src: url(/assets/fontes/fonte-dafont/KrinkesRegularPERSONAL.ttf) format(trueType);
+}
+
+
+/*
+    Tipo de format()
+    - openType (otf)
+    - trueType (ttf)
+    - embedde-openType
+    - trueType-aat (apple advanced Typography)
+    - svg
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+
+body {
+    background-color: #ccc;
+}
+
+
+#container {
+    width: 95%;
+    margin: auto;
+    background-color: #fff;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    padding: 1em;
+    font-family: 'krinkes-decor';
+    font-weight: normal;
+}
+
+
+h2 {
+    margin-left: 0.625em;
+    font-family: 'krinkes-regular';
+    font-weight: normal;
+    font-size: 3em;
+}
+
+
+p {
+    margin: 1em;
+    text-indent: 1.625em;
+}

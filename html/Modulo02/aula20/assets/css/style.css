@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+    text-align: justify;
+}
+
+
+header h1 {
+    text-align: center;
+    padding: 1em;
+}
+
+
+#container {
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+    padding: 1em;
+}
+
+
+.titulos {
+    margin-top: 0.625em;
+    margin-bottom: 0.625em;
+    background-image: linear-gradient(to right, #d8d7d7, #979797);
+}
+
+
+p {
+    text-indent: 1.875em;
+}
