@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body  {
+    min-height: 100vh;
+    background-color: #a9a9a9;
+}
+
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 3.125em 0em 3.125em 0em;
+}
+
+
+header h1 {
+    /*text-transform: uppercase;   Como deixar todas as letras em Maiúsculas*/ 
+    font-variant: small-caps; /* Outra forma de deixar as letras Maiúsculas mas sem parecer que esta gritando*/
+}
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+section {
+    padding: 10vh 0;
+    padding-left: 1.875em;
+    line-height: 2em;
+}
+
+
+.normal {
+    background-color: #fff;
+    color: #000;
+}
+
+
+.imagem {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.imagem > p {
+    background-color: #58575744;
+    width: 25em;
+}
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 0.625em;
+}
