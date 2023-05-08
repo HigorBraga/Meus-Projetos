@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando Colunas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Agrupando colunas com Colgroup</h1>
+    </header>
+
+
+    <main>
+        <section>
+            <table>
+                <colgroup>
+                    <col class="cnome">
+                    <col class="csexo">
+                    <col class="cidade">
+                    <col class="cprofissao">
+                </colgroup>
+                <thead>
+                    <caption>Cadastro</caption>
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Sexo</th>
+                        <th scope="col">Idade</th>
+                        <th scope="col">Profissão</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Higor Gustavo</td>
+                        <td>M</td>
+                        <td>25</td>
+                        <td>Treinador</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vitor Gabriel</td>
+                        <td>M</td>
+                        <td>27</td>
+                        <td>Youtuber</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Maria Alves</td>
+                        <td>F</td>
+                        <td>22</td>
+                        <td>Jornalista</td>
+                    </tr>
+
+                    <tr>
+                        <td>Carla Pereira</td>
+                        <td>F</td>
+                        <td>31</td>
+                        <td>Programadora</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bruno Bernardo</td>
+                        <td>M</td>
+                        <td>48</td>
+                        <td>Musico</td>
+                    </tr>
+
+                    <tr>
+                        <td>Patricia Souza</td>
+                        <td>F</td>
+                        <td>36</td>
+                        <td>Policial</td>
+                    </tr>
+                </tbody>
+
+                <tfoot></tfoot>
+            </table>
+        </section>
+    </main>
+
+
+    <footer>
+        <p class="observacao">Obs: Para fazer com que varias colunas sejam afetadas com a mesma formatação temos que usar a tag &lt;colgroup&gt; &lt;/colgroup&gt;, e dentro dela colocar tags &lt; col&gt; de acordo com o menu que criamos na tabela...</p>
+
+        <p class="observacao">E caso precisamos fazer com que a mesma coluna se espanda para o lado podemos usar a tag &lt;span&gt; dentro da tag &lt;col&gt;.</p>
+        <pre>
+            <code>
+                colgroup
+                    col class="cnome">
+                    col class="csexo" span='2'>
+                    col class="cidade">
+                    col class="cprofissao">
+                colgroup
+            </code>
+        </pre>
+    </footer>
+</body>
+</html>

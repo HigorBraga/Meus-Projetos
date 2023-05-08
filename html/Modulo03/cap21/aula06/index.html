@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Completas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Exemplo de tabelas completas</h1>
+        <p>Escopos</p>
+    </header>
+
+
+    <main>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Grupo</th>
+                        <th scope="col" colspan="2">Nomes</th>
+                        <th scope="colgroup" colspan="3">Filmes</th>
+                    </tr>
+                </thead>
+
+
+                <tbody>
+                    <tr>
+                        <th scope="rowgroup" rowspan="3">Mulheres</th>
+                        <td colspan="2">Ana Maria</td>
+                        <td>Alien</td>
+                        <td>Rambo</td>
+                        <td>Vingadores</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">Claúdia Melo</td>
+                        <td>Matrix</td>
+                        <td>Big Hero</td>
+                        <td>Pantera Negra</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">Beatriz Souza</td>
+                        <td>Homem de Ferro</td>
+                        <td>Homem Formiga</td>
+                        <td>Esqueceram de Mim</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="rowgroup" rowspan="3">Homens</th>
+                        <td colspan="2">Daniel Lourenço</td>
+                        <td>Wall-E</td>
+                        <td>Dangal</td>
+                        <td>Batman</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">Higor Gustavo</td>
+                        <td>Flash</td>
+                        <td>Dragon Ball</td>
+                        <td>Pokémon</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">Vitor Gabriel</td>
+                        <td>Hulk</td>
+                        <td>Doutor Estranho</td>
+                        <td>Planeta dos Macacos</td>
+                    </tr>
+                </tbody>
+
+
+                <tfoot></tfoot>
+            </table>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>obs: É recomendado que todo th tenha um escopo falando se ele é de linha ou coluna</p>
+    </footer>
+</body>
+</html>

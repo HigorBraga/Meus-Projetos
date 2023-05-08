@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    text-align: center;
+    background-image: url('/assets/imagens/wallpaper001.jpg');
+}
+
+
+main {
+    padding-top: 0.625em;
+}
+
+
+.quadrado {
+    display: inline-block;
+    border: 0.125em solid black;
+    border-radius: 0.625em;
+    background-color: #dcdcdc;
+    width: 18.75em;
+    height: 18.75em;
+}
+
+
+#q1 {
+    background-color: aqua;
+}
+
+
+#q2 {
+    background-image: linear-gradient(to bottom, blueviolet, #00ff88);
+}
+
+
+#q3 {
+    background-image: url('/assets/imagens/pattern003.png');
+}

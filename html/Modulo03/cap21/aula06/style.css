@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    text-align: center;
+    padding: 0.625em;
+}
+
+header > p {
+    margin-top: 0.625em;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+
+th, td {
+    border: 0.063em solid black;
+    padding: 0.5em;
+    text-align: center;
+    vertical-align: center;
+}
+
+
+footer {
+    text-align: center;
+    padding: 0.625em;
+    color: red;
+}

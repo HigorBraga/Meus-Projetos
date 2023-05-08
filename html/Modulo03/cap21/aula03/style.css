@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1em;
+}
+
+
+table {
+    width: 31.25em;
+    border-collapse: collapse;
+    position: relative;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0.625em;
+    background-color: lightgray;
+}
+
+thead {
+    /*
+        configuração para fazer o cabeçario da tabela ficar fixo e ir acompanhando
+        o rolamento da janela.
+    */
+    position: sticky;
+    top: -0.063em;
+    background-color: lightgray;
+}
+
+
+#populacao {
+    width: 7.125em;
+}
+
+
+td, th {
+    border: 0.063em solid #000;
+    padding: 0.625em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.numeros {
+    text-align: right;
+}
+
+tbody > tr:nth-child(2n) { /* Colocando efeito zebrado na tabela*/
+    background-color: lightgray;
+}
+
+
+thead, tfoot {
+    background-color: gray;
+    color: #fff;
+}

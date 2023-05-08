@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#container {
+    background-image: url(/assets/imagens/target001.png);
+    background-size: 100% 100%;
+    position: relative;
+    height: 31.25em;
+    background-color: blueviolet;
+    padding: 0.625em;
+}
+
+
+#conteudo {
+    background-image: url(/assets/imagens/target001.png);
+    background-size: 100% 100%;
+    position: absolute;
+    height: 12.5em;
+    background-color: greenyellow;
+    width: 25em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

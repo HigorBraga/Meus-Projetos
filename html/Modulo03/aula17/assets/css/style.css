@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    
+    /*background-color: #000;
+    background-image: url(/assets/imagens/wallpaper002.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    */
+
+    background: #000 url(/assets/imagens/wallpaper002.jpg) center no-repeat fixed;
+    background-size: cover;
+
+    /*
+        shorthand - background
+
+        ordem correta
+        color > image > position > repeat > [size] > attachment
+
+        não colocar o size junto da shorthand background por que os navegadores não aceitam
+    */
+}
+
+
+main {
+    margin: 1em;
+}
+
+
+section {
+    background-color: #fff;
+    max-width: 25em;
+    padding: 0.625em;
+    margin: 0 auto;
+    border: 0.063em solid darkblue;
+    border-radius: 0.938em;
+}
+
+
+section > h1 {
+    text-align: center;
+    margin: 0.625em;
+}
+
+
+section > p {
+    text-align: justify;
+    text-indent: 1.875em;
+    margin: 0.625em;
+    line-height: 1.30em;
+}

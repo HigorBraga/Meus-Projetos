@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhametos de tabelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+
+
+    <!--
+        HIERARQUIA DE TABELAS (SIMPLES)
+        table = tabelas
+            table row = linhas de tabela
+                table header = cabeçalho de tabela
+                table data = dados de tabelas
+    -->
+    <main>
+        <h1>Minha primeira tabela</h1>
+            <!--
+                Anatomia para tabelas grandes
+                table
+                    caption = legenda da tabela
+                    thead
+                        tr, td, th
+                    tbody
+                        tr, td, th
+                    tfoot
+                        tr, td, th
+            -->
+
+        <table>
+            <caption>População das Unidades Federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" id="populacao">População</th>
+                </tr>
+            </thead>
+
+
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="numeros">46 024 937</td>
+                </tr>
+
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="numeros">20 732 660</td>
+                </tr>
+
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="numeros">16 615 526</td>
+                </tr>
+
+                <tr>
+                    <td>Bahia</td>
+                    <td class="numeros">14 659 023</td>
+                </tr>
+
+                <tr>
+                    <td>Paraná</td>
+                    <td class="numeros">11 835 379</td>
+                </tr>
+
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="numeros">11 088 065</td>
+                </tr>
+
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="numeros">9 051 113</td>
+                </tr>
+
+                <tr>
+                    <td>Ceará</td>
+                    <td class="numeros">8 936 431</td>
+                </tr>
+
+                <tr>
+                    <td>Pará</td>
+                    <td class="numeros">8 442 962</td>
+                </tr>
+
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="numeros">7 762 154</td>
+                </tr>
+
+                <tr>
+                    <td>Goiás</td>
+                    <td class="numeros">6 950 976</td>
+                </tr>
+
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="numeros">6 800 605</td>
+                </tr>
+
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td class="numeros">4 108 508</td>
+                </tr>
+
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="numeros">4 030 961</td>
+                </tr>
+
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="numeros">3 952 262</td>
+                </tr>
+
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="numeros">3 784 239</td>
+                </tr>
+
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td class="numeros">3 303 953</td>
+                </tr>
+
+                <tr>
+                    <td>Piauí</td>
+                    <td class="numeros">3 270 174</td>
+                </tr>
+
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="numeros">3 125 254</td>
+                </tr>
+
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td class="numeros">2 923 369</td>
+                </tr>
+
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="numeros">2 833 742</td>
+                </tr>
+
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="numeros">2 211 868</td>
+                </tr>
+
+                <tr>
+                    <td>Rondônia</td>
+                    <td class="numeros">1 616 379</td>
+                </tr>
+
+                <tr>
+                    <td>Tocantins</td>
+                    <td class="numeros">1 584 306</td>
+                </tr>
+
+                <tr>
+                    <td>Acre</td>
+                    <td class="numeros">829 780</td>
+                </tr>
+
+                <tr>
+                    <td>Amapá</td>
+                    <td class="numeros">774 268</td>
+                </tr>
+
+                <tr>
+                    <td>Roraima</td>
+                    <td class="numeros">634 805</td>
+                </tr>
+            </tbody>
+
+
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de habitantes</th>
+                    <td class="numeros"><strong>207 883 699</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+
+    <footer>
+        <p>Para fazer o alinhamento vertical dos dados da tabela, podemos usar o vertical-align. (top, bottom, middle)</p>
+        <p>Obs: Não usar tabelas para estruturar sites, e também respeitar a hierarquia das tags.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
