@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa de Texto e Senha</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Caixa de Texto e Senha</h1>
+    </header>
+
+
+    <main>
+        <section class="container">
+            <form action="/enviarFormulario.js" method="post" id="enviarFormulario">
+                <div id="grupo-nome">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required minlength="5" autocomplete="name">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome" required minlength="5" autocomplete="surname">
+                </div>
+                <div id="grupo-email">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required autocomplete="email">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" required minlength="8" maxlength="20" autocomplete="current-password">
+                </div>
+                <button type="submit" value="enviar">Enviar</button>
+                <button type="reset" value="limpar">Limpar</button>
+            </form>
+        </section>
+
+
+        <section>
+            <p style="color: red">Obs: É recomendado deixar o autocompete do form ativado, pois ele ajuda no preenchimento dos formulários. E sempre lembrar de colocar os autocomplete dentro dos inputs colocando o que cada input faz para que o navegador preencha todos os campos corretamente.</p>
+        </section>
+    </main>
+
+
+    <footer></footer>
+</body>
+</html>
