@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando label no formulário</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Usando label</h1>
+    </header>
+
+
+    <main>
+        <section class="container">
+            <form action="/enviarFormulario" method="post" autocomplete="off" id="enviarFormulario">
+                <div id="grupo-nome">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite o sobrenome">
+                </div>
+                <div id="grupo-email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Digite o email">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite a senha">
+                </div>
+            </form>
+            <button type="submit" value="enviar">Enviar</button>
+        </section>
+    </main>
+
+
+    <footer></footer>
+</body>
+</html>
