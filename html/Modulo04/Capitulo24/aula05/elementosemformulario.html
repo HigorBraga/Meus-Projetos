@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos em formulários HTML</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Elementos em formulários HTML</h1>
+    </header>
+
+
+    <main>
+        <section class="container">
+            <form action="/enviarFormulario.js" method="get" id="enviarFormulario" autocomplete="on">
+                <div id="grupo-nome">
+                    <label for="nomeAluno">Nome do Aluno</label>
+                    <input type="text" name="nomeAluno" id="nomeAluno" required autocomplete="name" placeholder="nome completo do aluno" maxlength="30">
+
+                    <label for="Matricula">Matricula</label>
+                    <input type="number" name="matricula" id="matricula" required autocomplete="cc-number" maxlength="6">
+                </div>
+
+                <div id="grupo-notas">
+                    <label for="primeiranota">Primeira nota</label>
+                    <input type="number" name="primeiranota" id="primeiranota" required min="0" max="10" step="0.1">
+
+                    <label for="segundanota">Segunda nota</label>
+                    <input type="number" name="segundanota" id="segundanota" required min="0" max="10" step="0.1">
+
+                    <button type="button" id="calcularmedia" onclick="calcularMedia()">Calcular Média</button>
+                </div>
+
+                <div id="grupo-media">
+                    <p>Média:</p>
+                    <p id="mostrarmedia"></p>
+                    <p>Situação:</p>
+                    <p id="situacao"></p>
+                </div>
+
+                <div id="grupo-botoes">
+
+                    <button type="submit" value="enviar">Enviar</button>
+                    <button type="reset" value="limpar">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+    <section>
+        <p style="color: red">Obs: caso seja preciso usar inputs com data usar o type='date' ou type='month'.</p>
+    </section>
+
+    <script src="/assets/script.js"></script>
+    <footer></footer>
+</body>
+</html>
