@@ -9,5 +9,78 @@
 
 
 body {
-    background-color: #6e6d6d;
+    background-color: #fff;
+}
+
+
+header {
+    text-align: center;
+    padding: 1.25em;
+}
+
+
+#container {
+    background-color: lightgray;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 0.625em;
+}
+
+
+.grupo-geral {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.grupo-nome, .grupo-sobrenome, .grupo-email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+
+.grupo-esquerda input, .grupo-direita input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0.625em;
+    margin-bottom: 0.313em;
+}
+
+.grupo-direita {
+    margin-left: 5em;
+}
+
+
+.grupo-data, .grupo-hora, .grupo-senha {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+.grupos-botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+#btn-enviar, #btn-limpar {
+    padding: 0.625em;
+    margin: 0.625em;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.313em;
+    font-size: 1em;
+    font-weight: bold;
 }
