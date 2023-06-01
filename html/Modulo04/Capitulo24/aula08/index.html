@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulários com checkbox e radio button</h1>
+    </header>
+
+
+    <main>
+        <section id="container">
+            <form action="/assets/script/formulario.js" autocomplete="on" method="post">
+                <div class="grupo-geral">
+                    <div class="grupo-esquerda">
+                        <div class="grupo-nome">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" placeholder="Nome" autocomplete="name" maxlength="8" required>
+                        </div>
+                        <div class="grupo-sobrenome">
+                            <label for="sobrenome">Sobrenome:</label>
+                            <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" autocomplete="name" required>
+                        </div>
+                        <div class="grupo-email">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Email" autocomplete="email" required>
+                        </div>
+                        <div class="grupo-sexo">
+                            <label for="sexo">Sexo:</label>
+                            <input type="checkbox" id="masculino" name="masculino">
+                            <label for="masculino">Masculino</label>
+                            <input type="checkbox" id="feminino" name="feminino">
+                            <label for="feminino">Feminino</label>
+                        </div>
+                    </div>
+                    <div class="grupo-direita">
+                        <div class="grupo-data">
+                            <label for="dataEscolhida">Data:</label>
+                            <input type="date" id="dataEscolhida" name="dataEscolhida" required>
+                        </div>
+                        <div class="grupo-hora">
+                            <label for="horaEscolhida">Hora:</label>
+                            <input type="time" id="horaEscolhida" name="horaEscolhida" required>
+                        </div>
+                        <div class="grupo-senha">
+                            <label for="senha">Senha:</label>
+                            <input type="password" id="senha" name="senha" placeholder="Senha" autocomplete="new-password" required>
+                        </div>
+                        <div class="grupos-radios">
+                            <input type="radio" id="gostou" name="avaliacao">
+                            <label for="gostou">Bom</label>
+                            <input type="radio" id="regular" name="avaliacao">
+                            <label for="regular">regular</label>
+                            <input type="radio" id="ruim" name="avaliacao">
+                            <label for="ruim">Ruim</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="grupos-botoes">
+                    <button type="submit" value="enviar" id="btn-enviar">Enviar</button>
+                    <button type="reset" value="limpar" id="btn-limpar">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+    <footer></footer>
+</body>
+</html>
