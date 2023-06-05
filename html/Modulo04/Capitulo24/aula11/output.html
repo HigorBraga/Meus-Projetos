@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento output em formulario</title>
+</head>
+<body>
+    <header></header>
+
+
+    <main>
+        <section>
+            <form action="/envioFormulario.js">
+                <div>
+                    <label for="num">Número:</label>
+                    <input type="range" name="num" id="num" min="0" max="10" value="5" oninput="valor.innerHTML = Number(num.value)">
+                    <output id="valor">5</output>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+    <footer></footer>
+</body>
+</html>
