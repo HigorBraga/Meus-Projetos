@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+
+/* Configurações gerais */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(118, 92, 143);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+h1, h2 {
+    text-shadow: 0.125em 0.125em 0.25em rgba(45, 25, 65, 0.363);
+    padding: 0.625em;
+}
+
+
+h1 {
+    text-align: center;
+}
