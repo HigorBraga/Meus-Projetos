@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+
+body {
+    background-image: url(/imagens/back-tablet.jpg);
+}
+
+
+.grupo-imagens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tablet {
+    display: block;
+}
+
+
+#phone, #print, #desktop, #televisores {
+    display: none;
+}

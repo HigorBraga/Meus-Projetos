@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+
+body {
+    background-image: url(/imagens/back-tv.jpg);
+}
+
+
+.grupo-imagens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#televisores {
+    display: block;
+}
+
+
+#phone, #tablet, #desktop, #print {
+    display: none;
+}

@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+body {
+    background-image: url(/imagens/back-print.jpg);
+    /* Para impressoras o background-image é desnecessario pois não tem como imprimir background de sites em papeis*/
+}
+
+
+main {
+    border: 0.125em solid black;
+}
+
+
+main h1{
+    text-shadow: none;
+    color: #000;
+}
+
+
+.grupo-imagens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#print {
+    display: block;
+}
+
+
+#phone, #tablet, #desktop, #televisores {
+    display: none;
+}
