@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+
+@media screen and (min-width: 768px) {
+    #menu-hamburguer {
+        display: none;
+    }
+
+
+    #menu {
+        display: block;
+    }
+
+
+    #menu ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+
+    }
+
+
+    main {
+        width: 48em;
+    }
+}
